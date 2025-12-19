@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us - Previously Disadvantaged Group</title>
+<style>
+body {font-family:Arial, sans-serif; background:#f4f4f4; color:#333; margin:0; line-height:1.6;}
+header, footer {background:#1f2933; color:white; text-align:center; padding:25px;}
+nav {background:#111827; text-align:center; padding:10px;}
+nav a {color:#facc15; margin:0 15px; font-weight:bold; transition:0.3s;}
+nav a:hover {color:white;}
+section {max-width:1000px; margin:40px auto; background:white; padding:40px; border-radius:10px; box-shadow:0 6px 20px rgba(0,0,0,0.1);}
+.contact-info {margin:20px 0; font-size:1.1rem;}
+form input, form textarea {width:100%; padding:10px; margin:10px 0; border-radius:6px; border:1px solid #ccc;}
+button {background:#facc15; color:#1f2933; border:none; padding:12px 25px; border-radius:6px; font-weight:bold; cursor:pointer; margin-top:20px; transition:0.3s;}
+button:hover {background:#eab308;}
+</style>
+</head>
+<body>
+
+<header>
+<h1>Contact Us</h1>
+</header>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About Us</a>
+<a href="services.html">Our Work</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+<section>
+<h2>Send Us Your Message</h2>
+
+<form>
+<label for="name">Name:</label>
+<input type="text" id="name" name="name" required>
+
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" required>
+
+<label for="message">Message:</label>
+<textarea id="message" name="message" rows="5" required></textarea>
+
+<button type="submit" onclick="window.location.href='mailto:fntabane@gmail.com?subject=Application from ' + document.getElementById('name').value + '&body=' + encodeURIComponent(document.getElementById('message').value)">Submit</button>
+</form>
+
+<footer>
+<p>© 2007 – Previously Disadvantaged Group</p>
+</footer>
+
+</section>
+</body>
+</html>
